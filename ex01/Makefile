@@ -1,4 +1,6 @@
-SRC			= main.cpp
+SRC			=	main.cpp \
+				Contact.cpp \
+				PhoneBook.cpp
 
 OBJS		= ${SRC:.cpp=.o}
 NAME		= phonebook

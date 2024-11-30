@@ -18,7 +18,7 @@ class Contact {
     ~Contact();
 
     void set_first_name(std::string t_first_name);
-    std::string get_first_name(voi);
+    std::string get_first_name();
 
     void set_last_name(std::string t_last_name);
     std::string get_last_name();

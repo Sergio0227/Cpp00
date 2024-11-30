@@ -5,19 +5,19 @@
 
 #include "Contact.h"
 
+#define PHONEBOOK_SIZE 8
 
 class PhoneBook
 {
 private:
     Contact contacts[8];
-    int     index;
 
 public:
     PhoneBook();
     ~PhoneBook();
 
-    void add_contact();
-    void display_contact();
+    void add_contact(int index, Contact t_contact);
+    Contact get_contact(int index);
 };
 
 
