@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
                 argv[i]++;
             }
             i++;
+            if (argv[i])
+                std::cout << " ";
         }
         std::cout << std::endl;
     }

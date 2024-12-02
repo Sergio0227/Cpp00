@@ -1,3 +1,5 @@
 /home/sandre-a/42_cursus/CPP/00/cmake-build-debug/CMakeFiles/00.dir
+/home/sandre-a/42_cursus/CPP/00/cmake-build-debug/CMakeFiles/01.dir
+/home/sandre-a/42_cursus/CPP/00/cmake-build-debug/CMakeFiles/02.dir
 /home/sandre-a/42_cursus/CPP/00/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/sandre-a/42_cursus/CPP/00/cmake-build-debug/CMakeFiles/rebuild_cache.dir

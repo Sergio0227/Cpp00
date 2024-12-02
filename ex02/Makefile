@@ -1,10 +1,8 @@
-SRC			=	main.cpp \
-				Contact.cpp \
-				PhoneBook.cpp
+SRC			=	main.cpp
 
 OBJS		= ${SRC:.cpp=.o}
-NAME		= phonebook
-CFLAGS		= -Werror -Wall -Wextra -g
+NAME		= dreamJob
+CFLAGS		= -Werror -Wall -Wextra
 CPPFLAGS	= -std=c++98
 CC			= c++
 RM			= rm -rf
@@ -24,9 +22,9 @@ WHITE = \033[0;97m
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	@echo "$(ORANGE)[My Awesome PhoneBook]:$(DEF_COLOR) Linking object files to create executable $(GREEN)${NAME}$(DEF_COLOR)"
+	@echo "$(ORANGE)[The Job Of Your Dreams]:$(DEF_COLOR) Linking object files to create executable $(GREEN)${NAME}$(DEF_COLOR)"
 	@${CC} ${CFLAGS} ${CPPFLAGS} ${OBJS} -o ${NAME}
-	@echo "$(ORANGE)[My Awesome PhoneBook]:$(DEF_COLOR) exec file $(GREEN)=> Created!$(DEF_COLOR)"
+	@echo "$(ORANGE)[The Job Of Your Dreams]:$(DEF_COLOR) exec file $(GREEN)=> Created!$(DEF_COLOR)"
 
 %.o: %.c
 	@echo "Compiling $< with flags \"${CFLAGS}\" and \"${CPPFLAGS}\""
@@ -35,10 +33,10 @@ ${NAME}: ${OBJS}
 
 clean:
 	@${RM} ${OBJS}
-	@echo -n "$(CYAN)[My Awesome PhoneBook]:$(DEF_COLOR) object files$(RED) \t => Removed!$(DEF_COLOR)\n";
+	@echo -n "$(CYAN)[The Job Of Your Dreams]:$(DEF_COLOR) object files$(RED) \t => Removed!$(DEF_COLOR)\n";
 
 fclean: clean
-	@echo -n "$(CYAN)[My Awesome PhoneBook]:$(DEF_COLOR) exec. files$(RED)  => Removed!$(DEF_COLOR)\n";
+	@echo -n "$(CYAN)[The Job Of Your Dreams]:$(DEF_COLOR) exec. files$(RED)  => Removed!$(DEF_COLOR)\n";
 	@${RM} ${NAME};
 
 

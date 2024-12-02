@@ -55,18 +55,6 @@ build CMakeFiles/00.dir/ex00/megaphone.cpp.o: CXX_COMPILER__00_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/00.dir
   OBJECT_FILE_DIR = CMakeFiles/00.dir/ex00
 
-build CMakeFiles/00.dir/ex01/Contact.cpp.o: CXX_COMPILER__00_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex01/Contact.cpp || cmake_object_order_depends_target_00
-  DEP_FILE = CMakeFiles/00.dir/ex01/Contact.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/00.dir
-  OBJECT_FILE_DIR = CMakeFiles/00.dir/ex01
-
-build CMakeFiles/00.dir/ex01/PhoneBook.cpp.o: CXX_COMPILER__00_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex01/PhoneBook.cpp || cmake_object_order_depends_target_00
-  DEP_FILE = CMakeFiles/00.dir/ex01/PhoneBook.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/00.dir
-  OBJECT_FILE_DIR = CMakeFiles/00.dir/ex01
-
 build CMakeFiles/00.dir/ex01/main.cpp.o: CXX_COMPILER__00_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex01/main.cpp || cmake_object_order_depends_target_00
   DEP_FILE = CMakeFiles/00.dir/ex01/main.cpp.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
@@ -81,13 +69,87 @@ build CMakeFiles/00.dir/ex01/main.cpp.o: CXX_COMPILER__00_unscanned_Debug /home/
 #############################################
 # Link the executable 00
 
-build 00: CXX_EXECUTABLE_LINKER__00_Debug CMakeFiles/00.dir/ex00/megaphone.cpp.o CMakeFiles/00.dir/ex01/Contact.cpp.o CMakeFiles/00.dir/ex01/PhoneBook.cpp.o CMakeFiles/00.dir/ex01/main.cpp.o
+build 00: CXX_EXECUTABLE_LINKER__00_Debug CMakeFiles/00.dir/ex00/megaphone.cpp.o CMakeFiles/00.dir/ex01/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/00.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = 00
   TARGET_PDB = 00.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01
+
+
+#############################################
+# Order-only phony target for 01
+
+build cmake_object_order_depends_target_01: phony || .
+
+build CMakeFiles/01.dir/ex01/Contact.cpp.o: CXX_COMPILER__01_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex01/Contact.cpp || cmake_object_order_depends_target_01
+  DEP_FILE = CMakeFiles/01.dir/ex01/Contact.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/01.dir
+  OBJECT_FILE_DIR = CMakeFiles/01.dir/ex01
+
+build CMakeFiles/01.dir/ex01/PhoneBook.cpp.o: CXX_COMPILER__01_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex01/PhoneBook.cpp || cmake_object_order_depends_target_01
+  DEP_FILE = CMakeFiles/01.dir/ex01/PhoneBook.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/01.dir
+  OBJECT_FILE_DIR = CMakeFiles/01.dir/ex01
+
+build CMakeFiles/01.dir/ex01/main.cpp.o: CXX_COMPILER__01_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex01/main.cpp || cmake_object_order_depends_target_01
+  DEP_FILE = CMakeFiles/01.dir/ex01/main.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/01.dir
+  OBJECT_FILE_DIR = CMakeFiles/01.dir/ex01
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01
+
+
+#############################################
+# Link the executable 01
+
+build 01: CXX_EXECUTABLE_LINKER__01_Debug CMakeFiles/01.dir/ex01/Contact.cpp.o CMakeFiles/01.dir/ex01/PhoneBook.cpp.o CMakeFiles/01.dir/ex01/main.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/01.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 01
+  TARGET_PDB = 01.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 02
+
+
+#############################################
+# Order-only phony target for 02
+
+build cmake_object_order_depends_target_02: phony || .
+
+build CMakeFiles/02.dir/ex02/main.cpp.o: CXX_COMPILER__02_unscanned_Debug /home/sandre-a/42_cursus/CPP/00/ex02/main.cpp || cmake_object_order_depends_target_02
+  DEP_FILE = CMakeFiles/02.dir/ex02/main.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/02.dir
+  OBJECT_FILE_DIR = CMakeFiles/02.dir/ex02
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 02
+
+
+#############################################
+# Link the executable 02
+
+build 02: CXX_EXECUTABLE_LINKER__02_Debug CMakeFiles/02.dir/ex02/main.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 02
+  TARGET_PDB = 02.dbg
 
 
 #############################################
@@ -123,7 +185,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/sandre-a/42_cursus/CPP/00/cmake-build-debug
 
-build all: phony 00
+build all: phony 00 01 02
 
 # =============================================================================
 # Built-in targets

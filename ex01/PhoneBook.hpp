@@ -3,9 +3,9 @@
 #define PHONEBOOK_H
 #include <string>
 
-#include "Contact.h"
+#include "Contact.hpp"
 
-#define PHONEBOOK_SIZE 8
+#define PHONEBOOK_MAX_SIZE 8
 
 class PhoneBook
 {
@@ -13,13 +13,14 @@ private:
     Contact contacts[8];
 
 public:
-    PhoneBook();
-    ~PhoneBook();
+    PhoneBook(void);
+
+    ~PhoneBook(void);
 
     void add_contact(int index, Contact t_contact);
+
     Contact get_contact(int index);
 };
-
 
 
 #endif
